@@ -1,23 +1,18 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld />
+      <Categories />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import Categories from "./components/Categories";
 
 export default {
   name: "App",
-
   components: {
-    HelloWorld,
+    Categories,
   },
-
-  data: () => ({
-    //
-  }),
 };
 </script>
