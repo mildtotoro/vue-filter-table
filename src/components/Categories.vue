@@ -1,16 +1,14 @@
 <template>
-  <v-container>
-    <v-row class="text-center">
-      <v-col cols="12">
+  <div>
+    <div class="text-center">
+      <div cols="12">
         <input class="border" type="text" v-model="searchText" />
-        <v-list-item-content>
-          <v-list-item-title :key="item" v-for="item in filterList">{{
-            item
-          }}</v-list-item-title>
-        </v-list-item-content>
-      </v-col>
-    </v-row>
-  </v-container>
+        <ui>
+          <li :key="item" v-for="item in filterList">{{ item }}</li>
+        </ui>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
